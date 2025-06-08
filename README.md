@@ -14,14 +14,13 @@ This is the frontend Repo for the **Post-It Blog App**, built with React.js. Use
 - Tailwind CSS / Basic CSS for styling
 
 ## 📦 Features
-- Home Page: View all posts
-- Registration Page
-- Login Page
-- Create Post (only for logged-in users)
-- Edit Post (only author can edit)
-- Delete Post (only author can delete)
-- Single Post Page: Full details of one post
-- Protected routes via token
+- 🔐 User Registration & Login (JWT-based)
+- 🏠 View all blog posts
+- 📝 Create blog post (only for logged-in users)
+- ✏️ Edit and delete posts (only if you're the author)
+- 📄 View full post details on a single post page
+- 🔒 Protected routes based on login state
+- 🎨 Simple and responsive UI (Tailwind or plain CSS)
 
 ## 🧪 Tools & Libraries
 - `react-router-dom`
@@ -29,9 +28,33 @@ This is the frontend Repo for the **Post-It Blog App**, built with React.js. Use
 - `jwt-decode` (optional)
 - `tailwindcss` / `bootstrap` (optional for UI)
 
+## 🗂️ Folder Structure
+
+<pre>
+src/
+├── components/            # Reusable component files (Header, pages)
+│   ├── CreatePost.jsx
+│   ├── EditPost.jsx
+│   ├── Header.jsx
+│   ├── Home.jsx
+│   ├── Login.jsx
+│   ├── Register.jsx
+│   └── SinglePost.jsx
+├── App.js                 # Main app routing and layout
+├── App.css                # Global CSS
+├── api.js                 # Axios configuration and API baseURL
+├── toastNotification.js   # Toast wrapper for notifications
+├── index.js               # React DOM rendering entry
+├── .env.example           # Sample environment variables
+</pre>
+
 ## 📝 Setup Instructions
 ```bash
 git clone https://github.com/jeevan42/post-it-blog-app-frontend
 cd post-it-blog-app-frontend
 npm install
 npm start
+```
+
+## 🤝 Contributing
+Pull requests are welcome. For any major changes, please open an issue first.
