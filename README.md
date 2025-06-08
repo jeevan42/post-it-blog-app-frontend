@@ -3,8 +3,8 @@
 
 This is the frontend Repo for the **Post-It Blog App**, built with React.js. Users can register, log in, and perform full CRUD operations on blog posts. It uses JWT for authentication and Axios for API communication.
 
-## 🌐 Live Frontend
-**Netlify:** https://post-it-blog-app.netlify.app
+## 🌐 Live Demo
+👉 [Netlify App](https://post-it-blog-app.netlify.app)
 
 ## 🛠️ Tech Stack
 - React.js (with Hooks)
